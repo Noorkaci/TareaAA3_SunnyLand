@@ -910,11 +910,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff38c26450a52ed05a8b19784be5ec09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSourceJump: {fileID: 820667360}
-  audioSourceCrouch: {fileID: 820667362}
-  audioSourceLand: {fileID: 820667363}
-  audioSourceFootsteps: {fileID: 820667361}
-  audioSourceCherry: {fileID: 820667364}
 --- !u!82 &820667360
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1546,7 +1541,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 3339667773671304830, guid: ffffabcf0de604247acec1f297826604,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: a4f768b3e5656486aa2ff0538fa0ef0b, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1643,7 +1638,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 3339667773671304830, guid: ffffabcf0de604247acec1f297826604,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 7b8d16f86ae324a6ba2b8022c280130d, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1737,11 +1732,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 882542253}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d06ab7effd9e24a7fba0ed6bf13b8200, type: 3}
+  m_Script: {fileID: 11500000, guid: a8251d9af876c44bdb0053481cb0abea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSourceImp: {fileID: 882542259}
-  audioSourceRum: {fileID: 882542258}
 --- !u!1 &981602203
 GameObject:
   m_ObjectHideFlags: 0
