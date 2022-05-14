@@ -16,6 +16,9 @@ public class PlayerAudioController : MonoBehaviour
     bool isJumping = false;
     // make sure to keep track of the movement as well !
     bool isMoving= false; 
+    // normal pitch of jump and sound, needed for altering the pitch
+    float jumpingPitch = 1.0f;
+    float landingPitch = 1.0f;
 
     Rigidbody2D rb; // note the "2D" prefix 
 
@@ -86,6 +89,16 @@ public class PlayerAudioController : MonoBehaviour
  
     // trigger your jumping sound here !
     public void OnJump() {
+        //Generamos un número random entre 0 y 100, si el numero es menor que 50 se alterará el pitch del sonido del salto
+        int randomNumber = Random.Range(0, 100);
+        Debug.Log("Random Number of jump is " + randomNumber);
+        float randomModifier = Random.Range(0.2f, 1.8f);
+        float finalPitch = jumpingPitch + randomModifier;
+
+        if (randomNumber < 50)
+        {
+            jumping.pitch = finalPitch;
+        }
 
         isJumping = true;
         jumping.Play();
